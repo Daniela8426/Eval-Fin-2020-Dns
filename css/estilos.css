@@ -181,6 +181,20 @@ nav .logo img {
 
 }
 
+.division{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+}
+.info{
+    background-color: aqua;
+
+}
+
+.accesos{
+    background-color: black;
+}
+
 
 @media screen and (max-width:400px){
     nav .logo{
