@@ -24,7 +24,7 @@ header{
 .encabezado {    
     width: 100%; 
     height: 500px;
-    background: linear-gradient(to right, #7f7fd577, #86a8e770, #91eae471), url("../img/FONDOADMIN.jpg"); 
+    background: linear-gradient(to right, #606c88c7, #3f4c6bc2), url("../img/usudos.jpg"); 
     background-attachment: fixed; 
     background-position: center;  
     background-size: cover; 
@@ -63,8 +63,8 @@ header{
     width: 100%;
     flex-direction: column;
     transition: all 1s ease;
-    margin-top: 15px;
-    background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+    margin-top: 13px;
+    background: linear-gradient(to right, #1f1c2c, #928dab);
     
 }
 

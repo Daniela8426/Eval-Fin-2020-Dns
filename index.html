@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PROYECTO</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
@@ -14,15 +16,26 @@
     <header>
         <nav>
             <div class="logo">
-
+                <img src="img/logo-peluches.png" alt="">
             </div>
+
+            <div class="buscador">
+                <i class="fas fa-search"></i>
+                <input type="text" class="busca" placeholder="  Buscar">
+            </div>
+        </nav>
+    </header>
+
+    <div class="navegacion">
+        <nav>
             <div class="icono" id="icono">
-                <i class="fas fa-bars"></i>
+                <i class="fas fa-user-circle"></i>
+                <label for="" class="dns">Login</label>
             </div>
             <div class="enlaces si" id="enlaces">
                 <form method="POST" name="form1" action="php/inicio.php" class="formulario" autocomplete="off">
                     <!--Titulo-->
-                    <h1 class="form_titulo">Login</h1>
+                    <h1 class="form_titulo">Login</h1><br>
                     <div class="usuario">
                         <!--Usuario-->
                         <label>Username:</label><br>
@@ -33,78 +46,153 @@
                         <!--Contraseña-->
                         <label>Password:</label><br>
                         <input type="password" name="clave" class="camposLogin">
-                    </div>
+                    </div><br>
 
                     <div class="botones">
                         <!--Boton-->
                         <input type="submit" name="Login" value="Submit" class="botonLogin">
                     </div>
-                    
+
                 </form>
             </div>
-            <div class="buscador">
-                
-            </div>
-        </nav>
-    </header>
-
-    <div class="navegacion">
-        <nav>
             <ul>
                 <li>
-                    <a href="">Inicio <spam class="fas fa-caret-up"></spam></a>
+                    <a href="">Servicios <spam class="fas fa-caret-up"></spam></a>
                     <div class="subMenu">
                         <div class="subMenu-items">
-                            <p>HOLAAA</p>
+                            <p>Tipos</p><br><br><br>
                             <ul>
-                                <li><a href="">DANIELAAA</a></li>
-                                <li><a href="">DANIELAAA</a></li>
-                                <li><a href="">DANIELAAA</a></li>
-                            </ul>
-                        </div>
-                        <div class="subMenu-items">
-                            <p>HOLAAAAA 2</p>
-                            <ul>
-                                <li><a href="">DANIELAAA</a></li>
-                                <li><a href="">DANIELAAA</a></li>
-                                <li><a href="">DANIELAAA</a></li>
-                            </ul>
-                        </div>
-                        <div class="subMenu-items">
-                            <p>HOLAAAAA 3</p>
-                            <ul>
-                                <li><a href="">DANIELAAA</a></li>
-                                <li><a href="">DANIELAAA</a></li>
-                                <li><a href="">DANIELAAA</a></li>
+                                <li><a href="">*Compra</a></li>
+                                <li><a href="">*Alquiler</a></li>
                             </ul>
                         </div>
                     </div>
-                
+
                 </li>
-                <li><a href="">Inicio <spam class="fas fa-caret-up"></spam></a></li>
-                <li><a href="">Inicio <spam class="fas fa-caret-up"></spam></a></li>
-                <li><a href="">Inicio <spam class="fas fa-caret-up"></spam></a></li>
-                <li><a href="">Inicio <spam class="fas fa-caret-up"></spam></a></li>
-            
+
+                <li><a href="">Contactenos <spam class="fas fa-caret-up"></spam></a></li>
+
             </ul>
         </nav>
     </div>
-    <div class="division">
 
-        <div class="info">
-            <div class="usuario">
-                holaa
+   <div class="primeroVer">
+        <div class= "primero" style="height: 584px; overflow: hidden;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M208.09,0.00 C152.69,67.10 262.02,75.98 200.80,150.00 L0.00,150.00 L0.00,0.00 Z" style="stroke: none; fill: white;"></path>
+            </svg>
+        </div>
+
+        <div class="bienvenida">
+            <img height= "35%" width="35%" src="img/oso.png" alt="">
+        </div>
+   </div>
+    <section class="ser">
+     
+        <h2>Nuestros Servicios</h2>
+     
+        <div class="servicios">
+          
+         <div class="bloque">
+           <div class="bloque-content">
+             <h4>Lorem ipsum dolor sit amet.</h4>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas finibus, urna ut tristique semper, velit enim fermentum eros, in ultricies enim diam ut mauris. Mauris eu dolor commodo, hendrerit felis in, interdum dolor.</p>
+           </div>
+           <img src="img/servicios.jpg">
+         </div>
+     
+         <div class="bloque">
+           <div class="bloque-content">
+             <h4>Lorem ipsum dolor sit amet.</h4>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas finibus, urna ut tristique semper, velit enim fermentum eros, in ultricies enim diam ut mauris. Mauris eu dolor commodo, hendrerit felis in, interdum dolor.</p>
+           </div>
+           <img src="img/perroLuz.jpg">
+         </div>
+     
+         <div class="bloque">
+           <div class="bloque-content">
+             <h4>Lorem ipsum dolor sit amet.</h4>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas finibus, urna ut tristique semper, velit enim fermentum eros, in ultricies enim diam ut mauris. Mauris eu dolor commodo, hendrerit felis in, interdum dolor.</p>
+           </div>
+           <img src="img/grandes.jpg">
+         </div>
+     
+         <div class="bloque">
+           <div class="bloque-content">
+             <h4>Creación de llaveros personalidades en porcelana </h4>
+             <p>
+                Es un colgante perfecto para tu bolso, teléfono móvil, llave de coche u otra decoración.
+                También es un regalo perfecto para cumpleaños, día de San Valentín, día de la madre, Acción de Gracias, Navidad, graduación y cualquier ocasión.
+                </p>
+           </div>
+           <img src="img/llave.jpg">
+         </div>
+     
+        </div>
+     
+        </section>
+
+        
+     
+        <section class="novedades">
+            <h1>Novedades</h1>
+            <div class="content-novedades">
+        
+                <div class="productoUno">
+                    <div class="bloque">
+                    <div class="proUno-img">
+                        <img src="img/producto1.jpg">
+                    </div>
+                    <h2>Muñeco Tororo</h2>
+                    <a href="#">Saber mas</a>
+                    </div>
+                </div>
+                
+                <div class="productoDos">
+                    <div class="bloque">
+                    <div class="proDos-img">
+                        <img src="img/osos.jpg">
+                    </div>
+                    <h2>We Bare Bears</h2>
+                    <a href="#">Saber mas</a>
+                    </div>
+                </div>
+                <div class="productoUno">
+                    <div class="bloque">
+                    <div class="proUno-img">
+                        <img src="img/pulpo.jpg">
+                    </div>
+                    <h2>Pulpo Doble Funda</h2>
+                    <a href="#">Saber mas</a>
+                    </div>
+                </div>
+        
             </div>
-        </div>
-        <div class="accesos">
-            hola 2
-        </div>
+        </section>
 
-    </div>
+        <footer>
+            <div class="footer-contenerdor">
+
+               <div class="caja1">
+                   <img src="img/logo-peluches.png" alt="">
+                   
+               </div>
+
+               <div class="social">
+                <a href=""><img src="img/icono.facebook.jpg" alt="" width="15px"></a>
+                <a href=""><img src="img/icono.youtube.png" alt="" width="30px"></samp></a>
+                <a href=""><img src="img/icono-whatsapp.png" alt="" width="30px"></samp></a>
+                <a href=""><img src="img/icono.twitter.png" alt="" width="30px"></samp></a>
+            </div>
+            </div>
+        </footer>
+
+
 
 
 
     <script src="main.js"></script>
 </body>
+
 
 </html>
