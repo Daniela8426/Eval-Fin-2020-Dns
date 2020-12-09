@@ -1,9 +1,10 @@
-<!-- <?php
+<?php
     require_once("../conecct/conecct.php");
-    $sql = "SELECT * FROM usuario, tipo_usu WHERE usuario = '".$_SESSION['usuario']."' AND usuario.id_tip_usu = tipo_usu.id_tip_usu";
-    $usuario = mysqli_query($conexion, $sql) or die(msqli_errno());
+    include ("../php/validar.php");
+    $sql = "SELECT * FROM usuario, tipo_usu WHERE user = '".$_SESSION['usuario']."'";
+    $usuario = mysqli_query($conexion, $sql);
     $full = mysqli_fetch_assoc($usuario);
-?> -->
+?> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
