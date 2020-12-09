@@ -172,8 +172,8 @@ nav .logo img {
 
 .navegacion nav ul{
     list-style: none;
-   margin-top: -73px;
-   margin-left: 72%;
+   margin-top: -50px;
+   margin-left: 75%;
 
 }
 
@@ -186,7 +186,7 @@ nav .logo img {
     color: #fff;
     text-decoration: none;
     display: block;
-    padding: 50px;
+    padding: 25px;
     cursor: pointer;
     
 }
@@ -213,7 +213,7 @@ nav .logo img {
     position: absolute;
     display: none;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    margin-top: -22px;
+    margin-top: 1px;
 }
 
 .navegacion nav ul li:hover .subMenu{
@@ -458,7 +458,7 @@ nav .logo img {
 
 
 footer{
-    margin-top: -5%;
+    margin-top: 5%;
     bottom: 0px;
 	width: 100%;
 	height: 140px;

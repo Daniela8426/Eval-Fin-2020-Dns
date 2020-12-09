@@ -1,3 +1,7 @@
+<?php  
+require_once("conecct/conecct.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -143,7 +147,7 @@
                     <div class="proUno-img">
                         <img src="img/producto1.jpg">
                     </div>
-                    <h2>Muñeco Tororo</h2>
+                    <h2>MENU DUPLA</h2>
                     <a href="#">Saber mas</a>
                     </div>
                 </div>
@@ -153,7 +157,7 @@
                     <div class="proDos-img">
                         <img src="img/osos.jpg">
                     </div>
-                    <h2>We Bare Bears</h2>
+                    <h2>MENU FAMILIAR</h2>
                     <a href="#">Saber mas</a>
                     </div>
                 </div>
@@ -162,13 +166,73 @@
                     <div class="proUno-img">
                         <img src="img/pulpo.jpg">
                     </div>
-                    <h2>Pulpo Doble Funda</h2>
+                    <h2>MENU INFANTIL</h2>
                     <a href="#">Saber mas</a>
                     </div>
                 </div>
         
             </div>
         </section>
+
+        <div class="solicitud">
+        <form form method="POST" name="form1" action="php/registroPedidos.php" autocomplete="off">
+            <h2>DATOS DE PEDIDO</h2>
+
+            <div class= "pedido">
+                <label for="tipo" class= "form_laber" >*Seleccione el Menú que Desea Comprar</label>
+                <select class = "seleccionTipo" id="tipoMenu" name= "tipoMenu">
+                    <option value="0" placeholder=""></option>
+                    <?php
+                        $query = $conexion -> query ("SELECT * FROM tipo_menu");
+                        while ($valores = mysqli_fetch_array($query)) 
+                        { echo '<option value="'.$valores[id_tip_menu].'">'.$valores[nom_menu].'</option>';}
+                    ?>
+                </select>
+            </div>
+
+            <div class="pedido">
+                <label for="">*Digite la Cantidad que Desea Comprar</label>
+                <input type="number" id="cantidad" name="cantidad">
+            </div>
+            
+            <div class="pedido">
+                <label for="">*Digite Su Número de Cedula</label>
+                <input type="number" id="numCedula" name="numCedula">
+            </div>
+
+            <div class="pedido">
+                <label for="">*Digite Su Nombre Completo</label>
+                <input type="text" id="nombre" name="nombre" >
+            </div>
+            
+            <div class= "pedido">
+                <label for="tipo" class= "form_laber" >*Seleccione su modo de pago</label>
+                <select class = "seleccionTipo" id="tipoPago" name= "tipoPago">
+                    <option value="0" placeholder=""></option>
+                    <?php
+                        $query = $conexion -> query ("SELECT * FROM tipo_pago");
+                        while ($valores = mysqli_fetch_array($query)) 
+                        { echo '<option value="'.$valores[id_tip_pago].'">'.$valores[nom_mdo].'</option>';}
+                    ?>
+                </select>
+            </div>
+
+            <div class="pedido">
+                <label for="">*Digite Número de Contacto</label>
+                <input type="number" id="contacto" name="contacto">
+            </div>
+
+            <div class="pedido">
+                <label for="">*Digite Dirección de Envio</label>
+                <input type="texto" id="direccion" name="direccion">
+            </div>
+
+            <div class="boton">
+                <input type="submit" name="pedido" id="pedido" value="comprar">
+                <!-- <input type="hidden" name="pedidos" value="pedido"/> -->
+            </div>
+        </form>
+    </div>
 
         <footer>
             <div class="footer-contenerdor">
