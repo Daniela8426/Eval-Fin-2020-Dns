@@ -65,16 +65,14 @@
         
         $pedidos=("SELECT * FROM pedidos WHERE `id_estado` = 1");
         $query=mysqli_query($conexion,$pedidos);
-
         echo "<table border='2'>";
-            echo "<tr class='warning'>";
-                echo "<td>Nombre</td>";
-                echo "<td>Telefono</td>";
-                echo "<td>Tipo menu</td>";
-                echo "<td>Dirección</td>";
-                echo "<td>Fecha y Hora</td>";
-                echo "<td>Preparar</td>";
-            echo "</tr>";
+        echo "<td>Nombre</td>";
+        echo "<td>Telefono</td>";
+        echo "<td>Tipo menu</td>";
+        echo "<td>Dirección</td>";
+        echo "<td>Fecha y Hora</td>";
+        echo "<td>Preparar</td>";
+        echo "</tr>";
 
 
         ?>
@@ -89,6 +87,7 @@
 
             echo "<td><a href='inicioUno.php?id=$columna[0]&idPreparar=2'><i class='fas fa-utensils'></i></a></td>";
             echo "</tr>";
+            $id_pedido = $columna[0];
             
         }
 
@@ -99,7 +98,7 @@
 
                 $cedula=$full ['cedula'];
 
-                $sqlPreparar="UPDATE `pedidos` SET `id_estado` = '2', `idCocinero` = '$cedula', `feHoCocinado`= NOW()";
+                $sqlPreparar="UPDATE `pedidos` SET `id_estado` = '2', `idCocinero` = '$cedula', `feHoCocinado`= NOW() WHERE `id_pedido`= '$id_pedido' ";
                 $resPreparar=mysqli_query($conexion,$sqlPreparar);
                 echo '<script>alert("Pedido Preparado")</script> ';
                 echo "<script>location.href='inicioUno.php'</script>";
